@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="Xcorr_2525mult_synth_1" LaunchPart="xczu2cg-sbva484-2-e" LaunchTime="1648716468">
+  <File Type="PA-TCL" Name="Xcorr_2525mult.tcl"/>
+  <File Type="REPORTS-TCL" Name="Xcorr_2525mult_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Xcorr_2525mult.vds"/>
+  <File Type="RDS-UTIL" Name="Xcorr_2525mult_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Xcorr_2525mult_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Xcorr_2525mult.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Xcorr_2525mult">
+    <File Path="$PSRCDIR/sources_1/ip/Xcorr_2525mult/Xcorr_2525mult.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="Xcorr_2525mult"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Xcorr_2525mult">
+    <File Path="$PSRCDIR/sources_1/ip/Xcorr_2525mult/Xcorr_2525mult.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="Xcorr_2525mult"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

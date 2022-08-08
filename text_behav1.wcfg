@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="text_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="text" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="134500001fs"></ZoomEndTime>
+      <Cursor1Time time="86575000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="178"></NameColumnWidth>
+      <ValueColumnWidth column_width="76"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="27" />
+   <wave_markers>
+      <marker time="0" label="" />
+   </wave_markers>
+   <wvobject fp_name="/text/text/u_Frame_det_top/u_Xcorr/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/u_Xcorr/PN_cnt" type="array">
+      <obj_property name="ElementShortName">PN_cnt[5:0]</obj_property>
+      <obj_property name="ObjectShortName">PN_cnt[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/u_Xcorr/Rd_data0" type="array">
+      <obj_property name="ElementShortName">Rd_data0[23:0]</obj_property>
+      <obj_property name="ObjectShortName">Rd_data0[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/u_Xcorr/Data_mult0" type="array">
+      <obj_property name="ElementShortName">Data_mult0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_mult0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/u_Xcorr/PN1_mult0I" type="array">
+      <obj_property name="ElementShortName">PN1_mult0I[11:0]</obj_property>
+      <obj_property name="ObjectShortName">PN1_mult0I[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/u_Xcorr/PN1_mult0Q" type="array">
+      <obj_property name="ElementShortName">PN1_mult0Q[11:0]</obj_property>
+      <obj_property name="ObjectShortName">PN1_mult0Q[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/u_Xcorr/PN1_cmult_result0" type="array">
+      <obj_property name="ElementShortName">PN1_cmult_result0[63:0]</obj_property>
+      <obj_property name="ObjectShortName">PN1_cmult_result0[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/u_Xcorr/PN2_mult0I" type="array">
+      <obj_property name="ElementShortName">PN2_mult0I[11:0]</obj_property>
+      <obj_property name="ObjectShortName">PN2_mult0I[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/u_Xcorr/PN2_mult0Q" type="array">
+      <obj_property name="ElementShortName">PN2_mult0Q[11:0]</obj_property>
+      <obj_property name="ObjectShortName">PN2_mult0Q[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/u_Xcorr/PN2_cmult_result0" type="array">
+      <obj_property name="ElementShortName">PN2_cmult_result0[63:0]</obj_property>
+      <obj_property name="ObjectShortName">PN2_cmult_result0[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/Rden" type="logic">
+      <obj_property name="ElementShortName">Rden</obj_property>
+      <obj_property name="ObjectShortName">Rden</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/Rden_D1" type="logic">
+      <obj_property name="ElementShortName">Rden_D1</obj_property>
+      <obj_property name="ObjectShortName">Rden_D1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/Rden_D2" type="logic">
+      <obj_property name="ElementShortName">Rden_D2</obj_property>
+      <obj_property name="ObjectShortName">Rden_D2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/Rst_n" type="logic">
+      <obj_property name="ElementShortName">Rst_n</obj_property>
+      <obj_property name="ObjectShortName">Rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/wea" type="logic">
+      <obj_property name="ElementShortName">wea</obj_property>
+      <obj_property name="ObjectShortName">wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/data_InI" type="array">
+      <obj_property name="ElementShortName">data_InI[11:0]</obj_property>
+      <obj_property name="ObjectShortName">data_InI[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/data_InQ" type="array">
+      <obj_property name="ElementShortName">data_InQ[11:0]</obj_property>
+      <obj_property name="ObjectShortName">data_InQ[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/state" type="logic">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/addra" type="array">
+      <obj_property name="ElementShortName">addra[11:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/addra_D" type="array">
+      <obj_property name="ElementShortName">addra_D[11:0]</obj_property>
+      <obj_property name="ObjectShortName">addra_D[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/data_invalid" type="logic">
+      <obj_property name="ElementShortName">data_invalid</obj_property>
+      <obj_property name="ObjectShortName">data_invalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/Frame_Sype" type="array">
+      <obj_property name="ElementShortName">Frame_Sype[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Frame_Sype[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/Frame_state" type="logic">
+      <obj_property name="ElementShortName">Frame_state</obj_property>
+      <obj_property name="ObjectShortName">Frame_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/Data_outI" type="array">
+      <obj_property name="ElementShortName">Data_outI[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_outI[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/Data_outQ" type="array">
+      <obj_property name="ElementShortName">Data_outQ[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_outQ[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/startaddra" type="array">
+      <obj_property name="ElementShortName">startaddra[11:0]</obj_property>
+      <obj_property name="ObjectShortName">startaddra[11:0]</obj_property>
+   </wvobject>
+</wave_config>

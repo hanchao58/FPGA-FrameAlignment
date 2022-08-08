@@ -1,0 +1,754 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Apr  7 15:19:16 2022
+# Process ID: 11516
+# Current directory: D:/Projects/frame/frame.runs/synth_1
+# Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: D:/Projects/frame/frame.runs/synth_1/Top.vds
+# Journal file: D:/Projects/frame/frame.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top.tcl -notrace
+Command: synth_design -top Top -part xczu2cg-sbva484-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu2cg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu2cg'
+INFO: [Device 21-403] Loading part xczu2cg-sbva484-2-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17236 
+WARNING: [Synth 8-2611] redeclaration of ansi port Frame_state is not allowed [D:/Projects/frame/frame.srcs/sources_1/new/Top.v:39]
+WARNING: [Synth 8-976] Frame_state has already been declared [D:/Projects/frame/frame.srcs/sources_1/new/Top.v:39]
+WARNING: [Synth 8-2654] second declaration of Frame_state ignored [D:/Projects/frame/frame.srcs/sources_1/new/Top.v:39]
+INFO: [Synth 8-994] Frame_state is declared here [D:/Projects/frame/frame.srcs/sources_1/new/Top.v:30]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1428.258 ; gain = 61.828
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [D:/Projects/frame/frame.srcs/sources_1/new/Top.v:23]
+	Parameter THREHOLD bound to: 35'b00001110111001101011001010000000000 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Projects/frame/frame.srcs/sources_1/new/Top.v:101]
+INFO: [Synth 8-6157] synthesizing module 'Frame_det_top' [D:/Projects/frame/frame.srcs/sources_1/new/Frame_det_top.v:23]
+	Parameter THREHOLD bound to: 35'b00001110111001101011001010000000000 
+INFO: [Synth 8-6157] synthesizing module 'Xcorr' [D:/Projects/frame/frame.srcs/sources_1/new/Xcorr.v:23]
+	Parameter PN1 bound to: 64'b0000001111110101011001101110110100100111000101111001010001100001 
+	Parameter PN2 bound to: 64'b0011001010100100111100000110111001100011101011111101101000100001 
+INFO: [Synth 8-6157] synthesizing module 'Xcorr_ram' [D:/Projects/frame/frame.runs/synth_1/.Xil/Vivado-11516-DESKTOP-C1SLL7G/realtime/Xcorr_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Xcorr_ram' (1#1) [D:/Projects/frame/frame.runs/synth_1/.Xil/Vivado-11516-DESKTOP-C1SLL7G/realtime/Xcorr_ram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Cmult_xcorr' [D:/Projects/frame/frame.runs/synth_1/.Xil/Vivado-11516-DESKTOP-C1SLL7G/realtime/Cmult_xcorr_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Cmult_xcorr' (2#1) [D:/Projects/frame/frame.runs/synth_1/.Xil/Vivado-11516-DESKTOP-C1SLL7G/realtime/Cmult_xcorr_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Xcorr_2525mult' [D:/Projects/frame/frame.runs/synth_1/.Xil/Vivado-11516-DESKTOP-C1SLL7G/realtime/Xcorr_2525mult_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Xcorr_2525mult' (3#1) [D:/Projects/frame/frame.runs/synth_1/.Xil/Vivado-11516-DESKTOP-C1SLL7G/realtime/Xcorr_2525mult_stub.v:6]
+WARNING: [Synth 8-6014] Unused sequential element Rd_en_D2_reg was removed.  [D:/Projects/frame/frame.srcs/sources_1/new/Xcorr.v:244]
+WARNING: [Synth 8-6014] Unused sequential element Rd_en_D3_reg was removed.  [D:/Projects/frame/frame.srcs/sources_1/new/Xcorr.v:245]
+WARNING: [Synth 8-6014] Unused sequential element Rd_en_D4_reg was removed.  [D:/Projects/frame/frame.srcs/sources_1/new/Xcorr.v:246]
+WARNING: [Synth 8-6014] Unused sequential element Rd_en_D5_reg was removed.  [D:/Projects/frame/frame.srcs/sources_1/new/Xcorr.v:247]
+WARNING: [Synth 8-6014] Unused sequential element PN1_I_reg_reg was removed.  [D:/Projects/frame/frame.srcs/sources_1/new/Xcorr.v:305]
+WARNING: [Synth 8-6014] Unused sequential element PN1_Q_reg_reg was removed.  [D:/Projects/frame/frame.srcs/sources_1/new/Xcorr.v:313]
+WARNING: [Synth 8-6014] Unused sequential element PN2_I_reg_reg was removed.  [D:/Projects/frame/frame.srcs/sources_1/new/Xcorr.v:321]
+WARNING: [Synth 8-6014] Unused sequential element PN2_Q_reg_reg was removed.  [D:/Projects/frame/frame.srcs/sources_1/new/Xcorr.v:329]
+INFO: [Synth 8-6155] done synthesizing module 'Xcorr' (4#1) [D:/Projects/frame/frame.srcs/sources_1/new/Xcorr.v:23]
+WARNING: [Synth 8-6014] Unused sequential element Max_position2_reg was removed.  [D:/Projects/frame/frame.srcs/sources_1/new/Frame_det_top.v:85]
+INFO: [Synth 8-6155] done synthesizing module 'Frame_det_top' (5#1) [D:/Projects/frame/frame.srcs/sources_1/new/Frame_det_top.v:23]
+WARNING: [Synth 8-7023] instance 'u_Frame_det_top' of module 'Frame_det_top' has 9 connections declared, but only 8 given [D:/Projects/frame/frame.srcs/sources_1/new/Top.v:169]
+INFO: [Synth 8-6157] synthesizing module 'Track' [D:/Projects/frame/frame.srcs/sources_1/new/Track.v:23]
+	Parameter THREHOLD bound to: 35'b00001110111001101011001010000000000 
+	Parameter PN1 bound to: 64'b0000001111110101011001101110110100100111000101111001010001100001 
+	Parameter PN2 bound to: 64'b0011001010100100111100000110111001100011101011111101101000100001 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Projects/frame/frame.srcs/sources_1/new/Track.v:130]
+WARNING: [Synth 8-6014] Unused sequential element Track_en_D2_reg was removed.  [D:/Projects/frame/frame.srcs/sources_1/new/Track.v:111]
+WARNING: [Synth 8-6014] Unused sequential element Track_en_D3_reg was removed.  [D:/Projects/frame/frame.srcs/sources_1/new/Track.v:112]
+WARNING: [Synth 8-6014] Unused sequential element Track_en_D4_reg was removed.  [D:/Projects/frame/frame.srcs/sources_1/new/Track.v:113]
+WARNING: [Synth 8-6014] Unused sequential element Track_en_D5_reg was removed.  [D:/Projects/frame/frame.srcs/sources_1/new/Track.v:114]
+WARNING: [Synth 8-5788] Register Max_power_reg in module Track is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/frame/frame.srcs/sources_1/new/Track.v:242]
+INFO: [Synth 8-6155] done synthesizing module 'Track' (6#1) [D:/Projects/frame/frame.srcs/sources_1/new/Track.v:23]
+WARNING: [Synth 8-6014] Unused sequential element Symbol_cnt_reg was removed.  [D:/Projects/frame/frame.srcs/sources_1/new/Top.v:65]
+WARNING: [Synth 8-6014] Unused sequential element Data_valid_D2_reg was removed.  [D:/Projects/frame/frame.srcs/sources_1/new/Top.v:85]
+WARNING: [Synth 8-6014] Unused sequential element Data_valid_D3_reg was removed.  [D:/Projects/frame/frame.srcs/sources_1/new/Top.v:86]
+WARNING: [Synth 8-6014] Unused sequential element Max_power_reg was removed.  [D:/Projects/frame/frame.srcs/sources_1/new/Top.v:92]
+WARNING: [Synth 8-3848] Net Frame_state in module/entity Top does not have driver. [D:/Projects/frame/frame.srcs/sources_1/new/Top.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (7#1) [D:/Projects/frame/frame.srcs/sources_1/new/Top.v:23]
+WARNING: [Synth 8-3331] design Top has unconnected port Frame_state
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1493.180 ; gain = 126.750
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1511.105 ; gain = 144.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1511.105 ; gain = 144.676
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1511.105 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_ram/Xcorr_ram/Xcorr_ram_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/u_xcorr_ram0'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_ram/Xcorr_ram/Xcorr_ram_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/u_xcorr_ram0'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_ram/Xcorr_ram/Xcorr_ram_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/u_xcorr_ram1'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_ram/Xcorr_ram/Xcorr_ram_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/u_xcorr_ram1'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_ram/Xcorr_ram/Xcorr_ram_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/u_xcorr_ram2'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_ram/Xcorr_ram/Xcorr_ram_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/u_xcorr_ram2'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_ram/Xcorr_ram/Xcorr_ram_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/u_xcorr_ram3'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_ram/Xcorr_ram/Xcorr_ram_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/u_xcorr_ram3'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_ram/Xcorr_ram/Xcorr_ram_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/u_xcorr_ram4'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_ram/Xcorr_ram/Xcorr_ram_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/u_xcorr_ram4'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_ram/Xcorr_ram/Xcorr_ram_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/u_xcorr_ram5'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_ram/Xcorr_ram/Xcorr_ram_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/u_xcorr_ram5'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_ram/Xcorr_ram/Xcorr_ram_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/u_xcorr_ram6'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_ram/Xcorr_ram/Xcorr_ram_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/u_xcorr_ram6'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_ram/Xcorr_ram/Xcorr_ram_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/u_xcorr_ram7'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_ram/Xcorr_ram/Xcorr_ram_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/u_xcorr_ram7'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN1_cmult0'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN1_cmult0'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN1_cmult1'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN1_cmult1'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN1_cmult2'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN1_cmult2'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN1_cmult3'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN1_cmult3'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN1_cmult4'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN1_cmult4'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN1_cmult5'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN1_cmult5'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN1_cmult6'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN1_cmult6'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN1_cmult7'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN1_cmult7'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN2_cmult0'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN2_cmult0'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN2_cmult1'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN2_cmult1'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN2_cmult2'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN2_cmult2'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN2_cmult3'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN2_cmult3'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN2_cmult4'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN2_cmult4'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN2_cmult5'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN2_cmult5'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN2_cmult6'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN2_cmult6'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN2_cmult7'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN2_cmult7'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Track/PN1_cmult'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Track/PN1_cmult'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Track/PN2_cmult'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/Cmult_xcorr/Cmult_xcorr_in_context.xdc] for cell 'u_Track/PN2_cmult'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_2525mult/Xcorr_2525mult/Xcorr_2525mult_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN1_Imult'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_2525mult/Xcorr_2525mult/Xcorr_2525mult_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN1_Imult'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_2525mult/Xcorr_2525mult/Xcorr_2525mult_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN1_Qmult'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_2525mult/Xcorr_2525mult/Xcorr_2525mult_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN1_Qmult'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_2525mult/Xcorr_2525mult/Xcorr_2525mult_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN2_Imult'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_2525mult/Xcorr_2525mult/Xcorr_2525mult_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN2_Imult'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_2525mult/Xcorr_2525mult/Xcorr_2525mult_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN2_Qmult'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_2525mult/Xcorr_2525mult/Xcorr_2525mult_in_context.xdc] for cell 'u_Frame_det_top/u_Xcorr/PN2_Qmult'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_2525mult/Xcorr_2525mult/Xcorr_2525mult_in_context.xdc] for cell 'u_Track/PN1_Imult'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_2525mult/Xcorr_2525mult/Xcorr_2525mult_in_context.xdc] for cell 'u_Track/PN1_Imult'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_2525mult/Xcorr_2525mult/Xcorr_2525mult_in_context.xdc] for cell 'u_Track/PN1_Qmult'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_2525mult/Xcorr_2525mult/Xcorr_2525mult_in_context.xdc] for cell 'u_Track/PN1_Qmult'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_2525mult/Xcorr_2525mult/Xcorr_2525mult_in_context.xdc] for cell 'u_Track/PN2_Imult'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_2525mult/Xcorr_2525mult/Xcorr_2525mult_in_context.xdc] for cell 'u_Track/PN2_Imult'
+Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_2525mult/Xcorr_2525mult/Xcorr_2525mult_in_context.xdc] for cell 'u_Track/PN2_Qmult'
+Finished Parsing XDC File [d:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_2525mult/Xcorr_2525mult/Xcorr_2525mult_in_context.xdc] for cell 'u_Track/PN2_Qmult'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1597.449 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1597.449 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1597.449 ; gain = 231.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu2cg-sbva484-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1597.449 ; gain = 231.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/u_xcorr_ram0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/u_xcorr_ram1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/u_xcorr_ram2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/u_xcorr_ram3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/u_xcorr_ram4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/u_xcorr_ram5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/u_xcorr_ram6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/u_xcorr_ram7. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Track/PN1_cmult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/PN1_cmult0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/PN1_cmult1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/PN1_cmult2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/PN1_cmult3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/PN1_cmult4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/PN1_cmult5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/PN1_cmult6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/PN1_cmult7. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Track/PN2_cmult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/PN2_cmult0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/PN2_cmult1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/PN2_cmult2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/PN2_cmult3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/PN2_cmult4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/PN2_cmult5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/PN2_cmult6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/PN2_cmult7. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/PN1_Imult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Track/PN1_Imult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/PN1_Qmult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Track/PN1_Qmult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/PN2_Imult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Track/PN2_Imult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Frame_det_top/u_Xcorr/PN2_Qmult. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_Track/PN2_Qmult. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1597.449 ; gain = 231.020
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'Xcorr'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Projects/frame/frame.srcs/sources_1/new/Frame_det_top.v:114]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Projects/frame/frame.srcs/sources_1/new/Frame_det_top.v:118]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Projects/frame/frame.srcs/sources_1/new/Frame_det_top.v:110]
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'Frame_det_top'
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'Track'
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'Top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+                 iSTATE0 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'sequential' in module 'Xcorr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                              000 |                              000
+                  iSTATE |                              001 |                              001
+                 iSTATE1 |                              010 |                              010
+                 iSTATE4 |                              011 |                              100
+                 iSTATE3 |                              100 |                              101
+*
+                 iSTATE0 |                              101 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'sequential' in module 'Frame_det_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                               00
+                 iSTATE0 |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'sequential' in module 'Track'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'sequential' in module 'Top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1597.449 ; gain = 231.020
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     35 Bit       Adders := 4     
+	   2 Input     25 Bit       Adders := 28    
+	   3 Input     25 Bit       Adders := 4     
+	   2 Input     12 Bit       Adders := 6     
+	   2 Input      7 Bit       Adders := 5     
+	   3 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 8     
+	   2 Input      4 Bit       Adders := 24    
+	   2 Input      3 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               35 Bit    Registers := 9     
+	               32 Bit    Registers := 9     
+	               25 Bit    Registers := 36    
+	               12 Bit    Registers := 44    
+	                7 Bit    Registers := 11    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 16    
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 44    
++---Muxes : 
+	   2 Input     35 Bit        Muxes := 6     
+	   4 Input     35 Bit        Muxes := 4     
+	   6 Input     35 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 8     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 12    
+	   4 Input     25 Bit        Muxes := 28    
+	   2 Input     12 Bit        Muxes := 47    
+	   4 Input     12 Bit        Muxes := 32    
+	   6 Input     12 Bit        Muxes := 2     
+	   3 Input     12 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 14    
+	   6 Input      7 Bit        Muxes := 6     
+	   4 Input      6 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 8     
+	   4 Input      4 Bit        Muxes := 16    
+	   4 Input      3 Bit        Muxes := 3     
+	  10 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   6 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 39    
+	   4 Input      1 Bit        Muxes := 47    
+	   6 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   3 Input     12 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 7     
+Module Xcorr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     35 Bit       Adders := 2     
+	   2 Input     25 Bit       Adders := 24    
+	   3 Input     25 Bit       Adders := 4     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 8     
+	   2 Input      4 Bit       Adders := 24    
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	               35 Bit    Registers := 4     
+	               32 Bit    Registers := 8     
+	               25 Bit    Registers := 28    
+	               12 Bit    Registers := 33    
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 16    
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   2 Input     35 Bit        Muxes := 1     
+	   4 Input     35 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 8     
+	   2 Input     25 Bit        Muxes := 4     
+	   4 Input     25 Bit        Muxes := 28    
+	   2 Input     12 Bit        Muxes := 33    
+	   4 Input     12 Bit        Muxes := 32    
+	   4 Input      7 Bit        Muxes := 3     
+	   4 Input      6 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 8     
+	   4 Input      4 Bit        Muxes := 16    
+	   4 Input      3 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 47    
+Module Frame_det_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 5     
+	   3 Input      7 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               35 Bit    Registers := 1     
+	               12 Bit    Registers := 3     
+	                7 Bit    Registers := 6     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     35 Bit        Muxes := 1     
+	   6 Input     35 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 6     
+	   6 Input     12 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 12    
+	   6 Input      7 Bit        Muxes := 6     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+	   6 Input      1 Bit        Muxes := 10    
+Module Track 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     35 Bit       Adders := 2     
+	   2 Input     25 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	               35 Bit    Registers := 4     
+	               32 Bit    Registers := 1     
+	               25 Bit    Registers := 8     
+	               12 Bit    Registers := 4     
+	                7 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     35 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 8     
+	   2 Input     12 Bit        Muxes := 8     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 19    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:72)
+BRAMs: 300 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design Top has unconnected port Frame_state
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult0I_reg[0]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult6I_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult0I_reg[1]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult6I_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult0I_reg[2]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult0I_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult0I_reg[3]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult0I_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult0I_reg[4]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult0I_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult0I_reg[5]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult0I_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult0I_reg[6]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult0I_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult0I_reg[7]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult0I_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult0I_reg[8]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult0I_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult0I_reg[9]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult0I_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult0Q_reg[0]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult6I_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult0Q_reg[1]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult6I_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult0Q_reg[2]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult0Q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult0Q_reg[3]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult0Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult0Q_reg[4]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult0Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult0Q_reg[5]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult0Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult0Q_reg[6]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult0Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult0Q_reg[7]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult0Q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult0Q_reg[8]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult0Q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult0Q_reg[9]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult0Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult1I_reg[0]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult6I_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult1I_reg[1]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult6I_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult1I_reg[2]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult1I_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult1I_reg[3]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult1I_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult1I_reg[4]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult1I_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult1I_reg[5]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult1I_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult1I_reg[6]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult1I_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult1I_reg[7]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult1I_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult1I_reg[8]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult1I_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult1I_reg[9]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult1I_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult1Q_reg[0]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult6I_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult1Q_reg[1]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult6I_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult1Q_reg[2]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult1Q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult1Q_reg[3]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult1Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult1Q_reg[4]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult1Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult1Q_reg[5]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult1Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult1Q_reg[6]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult1Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult1Q_reg[7]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult1Q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult1Q_reg[8]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult1Q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult1Q_reg[9]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult1Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult2I_reg[0]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult6I_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult2I_reg[1]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult6I_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult2I_reg[2]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult2I_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult2I_reg[3]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult2I_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult2I_reg[4]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult2I_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult2I_reg[5]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult2I_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult2I_reg[6]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult2I_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult2I_reg[7]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult2I_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult2I_reg[8]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult2I_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult2I_reg[9]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult2I_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult2Q_reg[0]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult6I_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult2Q_reg[1]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult6I_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult2Q_reg[2]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult2Q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult2Q_reg[3]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult2Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult2Q_reg[4]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult2Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult2Q_reg[5]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult2Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult2Q_reg[6]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult2Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult2Q_reg[7]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult2Q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult2Q_reg[8]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult2Q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult2Q_reg[9]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult2Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult3I_reg[0]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult6I_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult3I_reg[1]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult6I_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult3I_reg[2]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult3I_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult3I_reg[3]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult3I_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult3I_reg[4]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult3I_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult3I_reg[5]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult3I_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult3I_reg[6]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult3I_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult3I_reg[7]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult3I_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult3I_reg[8]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult3I_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult3I_reg[9]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult3I_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult3Q_reg[0]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult6I_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult3Q_reg[1]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult6I_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult3Q_reg[2]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult3Q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult3Q_reg[3]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult3Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult3Q_reg[4]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult3Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult3Q_reg[5]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult3Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult3Q_reg[6]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult3Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult3Q_reg[7]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult3Q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult3Q_reg[8]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult3Q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult3Q_reg[9]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult3Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult4I_reg[0]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult6I_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult4I_reg[1]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult6I_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult4I_reg[2]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult4I_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult4I_reg[3]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult4I_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult4I_reg[4]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult4I_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult4I_reg[5]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult4I_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult4I_reg[6]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult4I_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult4I_reg[7]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult4I_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult4I_reg[8]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult4I_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult4I_reg[9]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult4I_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult4Q_reg[0]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult6I_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult4Q_reg[1]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult6I_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult4Q_reg[2]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult4Q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult4Q_reg[3]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult4Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult4Q_reg[4]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult4Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult4Q_reg[5]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult4Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult4Q_reg[6]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult4Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult4Q_reg[7]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult4Q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult4Q_reg[8]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult4Q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_Frame_det_top/u_Xcorr/PN2_mult4Q_reg[9]' (FDCE) to 'u_Frame_det_top/u_Xcorr/PN2_mult4Q_reg[11]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_Frame_det_top/u_Xcorr /\PN1_mult7Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_Track/PN1_multQ_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1597.449 ; gain = 231.020
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 2216.453 ; gain = 850.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2220.648 ; gain = 854.219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 2259.543 ; gain = 893.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 2265.180 ; gain = 898.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 2265.180 ; gain = 898.750
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin u_Track/Cmult_valid with 1st driver pin 'u_Track/PN1_cmult/m_axis_dout_tvalid' [D:/Projects/frame/frame.srcs/sources_1/new/Track.v:269]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin u_Track/Cmult_valid with 2nd driver pin 'u_Track/PN2_cmult/m_axis_dout_tvalid' [D:/Projects/frame/frame.srcs/sources_1/new/Track.v:279]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 2265.180 ; gain = 898.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 2265.180 ; gain = 898.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 2265.180 ; gain = 898.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 2265.180 ; gain = 898.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |Xcorr_ram      |         8|
+|2     |Cmult_xcorr    |        18|
+|3     |Xcorr_2525mult |         8|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |Cmult_xcorr        |     1|
+|2     |Cmult_xcorr__18    |     1|
+|3     |Cmult_xcorr__19    |     1|
+|4     |Cmult_xcorr__20    |     1|
+|5     |Cmult_xcorr__21    |     1|
+|6     |Cmult_xcorr__22    |     1|
+|7     |Cmult_xcorr__23    |     1|
+|8     |Cmult_xcorr__24    |     1|
+|9     |Cmult_xcorr__25    |     1|
+|10    |Cmult_xcorr__26    |     1|
+|11    |Cmult_xcorr__27    |     1|
+|12    |Cmult_xcorr__28    |     1|
+|13    |Cmult_xcorr__29    |     1|
+|14    |Cmult_xcorr__30    |     1|
+|15    |Cmult_xcorr__31    |     1|
+|16    |Cmult_xcorr__32    |     1|
+|17    |Cmult_xcorr__33    |     1|
+|18    |Cmult_xcorr__34    |     1|
+|19    |Xcorr_2525mult     |     1|
+|20    |Xcorr_2525mult__10 |     1|
+|21    |Xcorr_2525mult__11 |     1|
+|22    |Xcorr_2525mult__12 |     1|
+|23    |Xcorr_2525mult__13 |     1|
+|24    |Xcorr_2525mult__14 |     1|
+|25    |Xcorr_2525mult__8  |     1|
+|26    |Xcorr_2525mult__9  |     1|
+|27    |Xcorr_ram          |     1|
+|28    |Xcorr_ram__10      |     1|
+|29    |Xcorr_ram__11      |     1|
+|30    |Xcorr_ram__12      |     1|
+|31    |Xcorr_ram__13      |     1|
+|32    |Xcorr_ram__14      |     1|
+|33    |Xcorr_ram__8       |     1|
+|34    |Xcorr_ram__9       |     1|
+|35    |BUFG               |     1|
+|36    |CARRY8             |   146|
+|37    |LUT1               |    18|
+|38    |LUT2               |  1738|
+|39    |LUT3               |   372|
+|40    |LUT4               |   580|
+|41    |LUT5               |    93|
+|42    |LUT6               |   306|
+|43    |FDCE               |  1661|
+|44    |FDPE               |     1|
+|45    |IBUF               |    27|
+|46    |OBUF               |     2|
+|47    |OBUFT              |     1|
++------+-------------------+------+
+
+Report Instance Areas: 
++------+------------------+--------------+------+
+|      |Instance          |Module        |Cells |
++------+------------------+--------------+------+
+|1     |top               |              |  6708|
+|2     |  u_Frame_det_top |Frame_det_top |  5325|
+|3     |    u_Xcorr       |Xcorr         |  5049|
+|4     |  u_Track         |Track         |  1264|
++------+------------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 2265.180 ; gain = 898.750
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 2 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 2265.180 ; gain = 812.406
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 2265.180 ; gain = 898.750
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 2277.254 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 174 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2282.426 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 28 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 27 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+143 Infos, 25 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 2282.426 ; gain = 1814.867
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2282.426 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Projects/frame/frame.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  7 15:20:23 2022...

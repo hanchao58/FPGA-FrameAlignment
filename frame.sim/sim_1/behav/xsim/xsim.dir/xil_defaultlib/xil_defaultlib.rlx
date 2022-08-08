@@ -1,0 +1,15 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/Projects/frame/frame.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/Projects/frame/frame.srcs/sim_1/new/text.v,1649749347,verilog,,,,text,,,,,,,,
+D:/Projects/frame/frame.srcs/sources_1/ip/Cmult_xcorr/sim/Cmult_xcorr.vhd,1648716276,vhdl,,,,cmult_xcorr,,,,,,,,
+D:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_2525mult/sim/Xcorr_2525mult.vhd,1648716467,vhdl,,,,xcorr_2525mult,,,,,,,,
+D:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_ram/sim/Xcorr_ram.v,1648980873,verilog,,D:/Projects/frame/frame.srcs/sources_1/new/Frame_det_top.v,,Xcorr_ram,,,,,,,,
+D:/Projects/frame/frame.srcs/sources_1/ip/text_ram/sim/text_ram.v,1649152373,verilog,,D:/Projects/frame/frame.srcs/sources_1/ip/Xcorr_ram/sim/Xcorr_ram.v,,text_ram,,,,,,,,
+D:/Projects/frame/frame.srcs/sources_1/ip/text_ramQ/sim/text_ramQ.v,1649152387,verilog,,D:/Projects/frame/frame.srcs/sources_1/ip/text_ram/sim/text_ram.v,,text_ramQ,,,,,,,,
+D:/Projects/frame/frame.srcs/sources_1/new/Frame_det_top.v,1649240561,verilog,,D:/Projects/frame/frame.srcs/sources_1/new/Top.v,,Frame_det_top,,,,,,,,
+D:/Projects/frame/frame.srcs/sources_1/new/Top.v,1649749914,verilog,,D:/Projects/frame/frame.srcs/sources_1/new/Track.v,,Top,,,,,,,,
+D:/Projects/frame/frame.srcs/sources_1/new/Track.v,1649749630,verilog,,D:/Projects/frame/frame.srcs/sources_1/new/Xcorr.v,,Track,,,,,,,,
+D:/Projects/frame/frame.srcs/sources_1/new/Xcorr.v,1649673341,verilog,,D:/Projects/frame/frame.srcs/sim_1/new/text.v,,Xcorr,,,,,,,,

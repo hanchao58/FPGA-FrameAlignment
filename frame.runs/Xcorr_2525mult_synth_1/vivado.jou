@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Mar 31 16:47:54 2022
+# Process ID: 7148
+# Current directory: D:/Projects/frame/frame.runs/Xcorr_2525mult_synth_1
+# Command line: vivado.exe -log Xcorr_2525mult.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Xcorr_2525mult.tcl
+# Log file: D:/Projects/frame/frame.runs/Xcorr_2525mult_synth_1/Xcorr_2525mult.vds
+# Journal file: D:/Projects/frame/frame.runs/Xcorr_2525mult_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Xcorr_2525mult.tcl -notrace

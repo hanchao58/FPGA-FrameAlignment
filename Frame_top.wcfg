@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="text_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="text" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="264400001fs"></ZoomEndTime>
+      <Cursor1Time time="90000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="102"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/text/text/u_Frame_det_top/Rst_n" type="logic">
+      <obj_property name="ElementShortName">Rst_n</obj_property>
+      <obj_property name="ObjectShortName">Rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/Track_fail" type="logic">
+      <obj_property name="ElementShortName">Track_fail</obj_property>
+      <obj_property name="ObjectShortName">Track_fail</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/Det_done" type="logic">
+      <obj_property name="ElementShortName">Det_done</obj_property>
+      <obj_property name="ObjectShortName">Det_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/Det_position" type="array">
+      <obj_property name="ElementShortName">Det_position[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Det_position[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/Frame_start" type="logic">
+      <obj_property name="ElementShortName">Frame_start</obj_property>
+      <obj_property name="ObjectShortName">Frame_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/State" type="array">
+      <obj_property name="ElementShortName">State[2:0]</obj_property>
+      <obj_property name="ObjectShortName">State[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/Start_point" type="array">
+      <obj_property name="ElementShortName">Start_point[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Start_point[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/Max_power" type="array">
+      <obj_property name="ElementShortName">Max_power[34:0]</obj_property>
+      <obj_property name="ObjectShortName">Max_power[34:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/Det_cnt" type="array">
+      <obj_property name="ElementShortName">Det_cnt[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Det_cnt[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/Max_power_reg" type="array">
+      <obj_property name="ElementShortName">Max_power_reg[34:0]</obj_property>
+      <obj_property name="ObjectShortName">Max_power_reg[34:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/Max_position_reg" type="array">
+      <obj_property name="ElementShortName">Max_position_reg[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Max_position_reg[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/Minus_0" type="array">
+      <obj_property name="ElementShortName">Minus_0[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Minus_0[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/Minus_1" type="array">
+      <obj_property name="ElementShortName">Minus_1[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Minus_1[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/Minus_2" type="array">
+      <obj_property name="ElementShortName">Minus_2[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Minus_2[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/Max_position" type="array">
+      <obj_property name="ElementShortName">Max_position[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Max_position[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/Det_position_wire" type="array">
+      <obj_property name="ElementShortName">Det_position_wire[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Det_position_wire[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/Xcorr_done" type="logic">
+      <obj_property name="ElementShortName">Xcorr_done</obj_property>
+      <obj_property name="ObjectShortName">Xcorr_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/text/text/u_Frame_det_top/THREHOLD" type="array">
+      <obj_property name="ElementShortName">THREHOLD[34:0]</obj_property>
+      <obj_property name="ObjectShortName">THREHOLD[34:0]</obj_property>
+   </wvobject>
+</wave_config>
